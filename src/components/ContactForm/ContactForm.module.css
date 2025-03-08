@@ -28,4 +28,27 @@
   height: 30px;
   border-radius: 5px;
   font-size: 16px;
+  background-color: rgb(148, 198, 247);
+  border: none;
+}
+
+.formButton:hover {
+  background-color: rgb(73, 163, 253);
+  border-color: rgb(41, 140, 240);
+}
+
+.schemaName {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin-top: 5px;
+  color: rgb(179, 9, 9);
+}
+
+.schemaNumber {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin-top: 5px;
+  color: rgb(179, 9, 9);
 }

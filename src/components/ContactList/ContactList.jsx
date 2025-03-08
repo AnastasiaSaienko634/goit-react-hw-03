@@ -1,3 +1,4 @@
+import Contact from "../Contact/Contact";
 import css from "./ContactList.module.css";
 
 export default function ContactList({ contactList, handeleDeleteContact }) {
@@ -6,16 +7,12 @@ export default function ContactList({ contactList, handeleDeleteContact }) {
       <ul className={css.listContact}>
         {contactList.map((el) => (
           <li key={el.id} className={css.boxContact}>
-            <div className={css.contactInfo}>
-              <p>Name: {el.name}</p>
-              <p>Number: {el.number}</p>
-            </div>
-            <button
-              onClick={() => handeleDeleteContact(el.id)}
-              className={css.buttonContact}
-            >
-              Delete
-            </button>
+            <Contact
+              handeleDeleteContact={handeleDeleteContact}
+              name={el.name}
+              number={el.number}
+              id={el.id}
+            />
           </li>
         ))}
       </ul>

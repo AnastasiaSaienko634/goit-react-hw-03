@@ -10,15 +10,6 @@
   border-radius: 5px;
 }
 
-.buttonContact {
-  display: flex;
-  font-size: 20px;
-  border-radius: 8px;
-  border: 1px solid rgb(101, 178, 255);
-  background-color: rgb(138, 191, 245);
-  font-family: sans-serif;
-}
-
 .contactInfo {
   display: flex;
   flex-direction: column;
